@@ -1,7 +1,7 @@
 {
   "name": "myntra-replica",
   "version": "0.1.0",
-  "homepage": "https://shalini-dhanasekar.github.io/myntra-replica",
+  "homepage":"https://github.com/shalini-dhanasekar/myntrareplica.git",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
