@@ -1,0 +1,25 @@
+p.texttitle {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px;
+    max-height: 5em;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 576px)
+  .card-deck {
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+     /* margin-right: -15px;*/
+      /* margin-left: -15px; */
+  }
+  .card-deck {
+    margin: 50px;
+  }
+  .card-img-top {
+     width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+  }

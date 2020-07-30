@@ -1,0 +1,150 @@
+.footer
+{
+  background-color: #FAFBFC;
+  font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  padding-top: 25px;
+}
+
+.rowforfooter
+{
+  margin: 10px 150px;
+}
+.top
+{
+  color: #282c3f;
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.top1
+{
+  color: #282c3f;
+  font-size: 16px;
+}
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  width: 10px;
+  height: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+.online
+{
+  font-size: 12px;
+}
+.experience
+{
+  margin: 0 50px;
+}
+.ordericons
+{
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.order
+{
+  font-size:15px;
+
+}
+.icons{
+  height: 10px;
+}
+.icons img{
+  height: 20px;
+  padding-right: 10px;
+}
+.new-badge{
+  background: red;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 40px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.list-group-item {
+position: relative;
+display: block;
+padding: 5px;
+margin-bottom: -1px;
+background-color: #FAFBFC;
+border:none;
+color: #94969f;;
+display: block;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+   flex-grow:0;
+  max-width: 100%;
+}
+.popular
+{
+  color: #94969f;;
+    font-size: 15px;
+    line-height: 25px;
+}
+.popular1
+{
+  color: #94969f;
+  font-size: 13px;
+
+}
+.popular3
+{
+  color: #94969f;
+  font-size: 14px;
+
+}
+.popular2
+{
+  color: #94969f;
+  font-size: 13px;
+   margin-left: 20px;
+}
+.top3
+{
+  color: #535766!important;
+  font-size: 13px;
+}
+.top2
+{
+  color: #535766!important;
+  font-size: 15px;
+  font-weight: 500;
+}
+.top4
+{
+  color: #535766!important;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.contact
+{
+  color: #94969f;;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.bluecontact
+{
+  color: #526cd0;
+}
+.copyrights
+{
+  color: #94969f;;
+  font-size: 16px;
+  float: right;
+  margin-top: -20px;
+  font-weight: 100;
+}
+.copyrights1
+{
+  color: #94969f;
+  font-size: 15px;
+  margin-top: -25px;
+  float: right;
+}
