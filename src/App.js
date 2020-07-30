@@ -1,24 +1,19 @@
 import React from 'react';
-import mainlogo from './myntra.svg';
+import mainlogo from './myntralogo.png';
 import './App.css';
 import { Carousel, Navbar,Nav,Form,FormControl,Card,CardDeck,Container,Row,Col,ListGroup,Button} from 'react-bootstrap';
-import { faUser,faBookmark,faEnvelope} from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import MaterialIcon, {colorPalette} from 'material-icons-react';
-
 
 
 function App() {
   return (
     <div className="main">
-    
-    <div className="Navtop shadow p-3 mb-5 bg-white rounded">
+
+    <div className="Navtop fixed-top shadow p-3 mb-5  bg-white rounded">
       <Navbar>
     <Navbar.Brand href="#home" className="mainlogo">
     <img
         src={mainlogo}
-        width="53"
-        height="36"
+        height="48"
         className="d-inline-block align-top"
         alt="React Bootstrap logo"
       />
@@ -31,24 +26,42 @@ function App() {
       <Nav.Link href="#essentials">ESSENTIALS</Nav.Link>
     </Nav>
     <Form inline className="searchbar">
-      <FormControl type="text" size="sm"  placeholder="Search for products,brands and more" />
+      <FormControl type="text" size="sm" className="pl-4" placeholder="Search for products,brands and more" />
     </Form>
     <div className="user">
-    <FontAwesomeIcon icon={faUser} />
-    
+        <Col>
+          <Row className="d-flex justify-content-center">
+          <ion-icon name="person-outline"></ion-icon>
+          </Row>
+          <Row className="navbar-icon-text d-flex justify-content-center">
+            Profile
+          </Row>
+        </Col>
   </div>
   <div className="bookmark">
-    <FontAwesomeIcon icon={faBookmark} />
-    
+    <Col>
+      <Row className="d-flex justify-content-center">
+      <ion-icon name="bookmark-outline" ></ion-icon>
+      </Row>
+      <Row className="navbar-icon-text d-flex justify-content-center">
+        Wishlist
+      </Row>
+    </Col>
   </div>
-  
   <div className="bag">
-  <MaterialIcon icon="shopping_bag" size={30}/>
-  
+    <Col>
+      <Row className="d-flex justify-content-center">
+      <ion-icon name="briefcase-outline"></ion-icon>
+      </Row>
+      <Row className="navbar-icon-text d-flex justify-content-center">
+        Bag
+      </Row>
+    </Col>
   </div>
 </Navbar>
 </div>
-  
+
+  <div className="topcarousel">
   <Carousel>
   <Carousel.Item>
   <img
@@ -62,16 +75,17 @@ function App() {
       className="d-block w-100"
       src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/27/7a19f7d6-a87a-4698-9e01-cb927892212a1595871605346-Sangria_Desk.jpg"
       alt="second slide"
-    />  
+    />
   </Carousel.Item>
   <Carousel.Item>
   <img
       className="d-block w-100"
-      src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/27/ee39f9c9-f3f7-4bff-b0c4-9f4ea5a658331595871605194-M-H_Desk_Banner.jpg" 
+      src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/27/ee39f9c9-f3f7-4bff-b0c4-9f4ea5a658331595871605194-M-H_Desk_Banner.jpg"
       alt="First slide"
     />
   </Carousel.Item>
 </Carousel>
+  </div>
 
 <Carousel>
   <Carousel.Item>
@@ -120,7 +134,7 @@ function App() {
     />
   </Carousel.Item>
 </Carousel>
-  
+
 <p className="texttitle">CATEGORIES TO BAG</p>
 
 <CardDeck>
@@ -159,7 +173,7 @@ function App() {
     <Card.Img variant="top" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a38a8d79-3766-47df-b207-b6dc9cfd7ff81594223046614-Plus-Size-Womens.jpg"/>
   </Card>
 
-  
+
 </CardDeck>
 
 <p className="texttitle">EXPLORE TOP BRANDS</p>
@@ -170,31 +184,31 @@ function App() {
 
 <Card>
     <Card.Img variant="top" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/21/49e0529b-f16e-488e-baea-f3fe7f41f4d31590039953100-Hrx.jpg"/>
- </Card>   
+ </Card>
 
-<Card>  
+<Card>
     <Card.Img variant="top" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/21/9e51b35a-5eea-4a41-b3c8-144a32c9fa9e1590039953366-roadster.jpg"/>
  </Card>
 
- <Card>   
+ <Card>
   <Card.Img variant="top" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/21/6cbcbaa1-7625-4426-abf2-ecdd86350f681590039952871-anouk.jpg"/>
 </Card>
 
-<Card>   
+<Card>
   <Card.Img variant="top" src="https://assets.myntassets.com/w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/21/6b31bff2-ad89-48d9-ab34-1df64ee3acd41590039953567-USPA.jpg"/>
 </Card>
 
-  
+
 </CardDeck>
 
 <h2 className="textplay">Play At Home</h2>
-  
+
 <Row className="play">
 
-<img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/22/95c386ff-73fc-4a1d-8583-ac97bb617c6f1590134696200-Daily-Crossword.jpg" width="25%" height="auto"/> 
-<img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/22/6304aeb2-a946-4d5d-ab7f-70b1cc3bf9a01590134696240-Daily-quiz.jpg"  width="25%" height="auto"/>  
+<img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/22/95c386ff-73fc-4a1d-8583-ac97bb617c6f1590134696200-Daily-Crossword.jpg" width="25%" height="auto"/>
+<img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/22/6304aeb2-a946-4d5d-ab7f-70b1cc3bf9a01590134696240-Daily-quiz.jpg"  width="25%" height="auto"/>
 <img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/5/22/37434a84-ac9b-41c0-8c44-6309011138501590134696318-Pictionary.jpg" width="25%" height="auto"/>
-<img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/7/23/8c6c86c2-557e-450c-ada6-e47cf81fdf471595482629772-Myngo.jpg" width="25%" height="auto"/> 
+<img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/7/23/8c6c86c2-557e-450c-ada6-e47cf81fdf471595482629772-Myngo.jpg" width="25%" height="auto"/>
 </Row>
 <div className="sonakshipic">
 <img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/4/4/e08290b0-0ed7-4aa8-be85-262f98af86641586012559610-3--1-.jpg" width="100%" height="auto"/>
@@ -208,7 +222,7 @@ function App() {
 
 <h2 className="textplay">The Colour Edit</h2>
 <div className="colour">
-<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/4/1/118ea5ca-44b9-4dff-b7ba-ee53edc31e391585744849283-Final-Desktop-revamp_20.jpg" width="100%" height="auto"/> 
+<img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/4/1/118ea5ca-44b9-4dff-b7ba-ee53edc31e391585744849283-Final-Desktop-revamp_20.jpg" width="100%" height="auto"/>
 </div>
 <h2 className="textplay">Essential Stories</h2>
 <Row className="essential">
@@ -230,7 +244,7 @@ function App() {
   <ListGroup.Item>Home & Living</ListGroup.Item>
   <ListGroup.Item>Essentials</ListGroup.Item>
   <ListGroup.Item>Gift Cards</ListGroup.Item>
-  <ListGroup.Item>Myntra Insider<a className="New">New</a></ListGroup.Item>
+  <ListGroup.Item>Myntra Insider<a className="new-badge text-white">New</a></ListGroup.Item>
 </ListGroup>
   </Col>
   </div>
@@ -251,7 +265,7 @@ function App() {
   <ListGroup.Item>Privacy Policy</ListGroup.Item>
   <ListGroup.Item>SiteMap</ListGroup.Item>
 </ListGroup>
-  
+
   </Col>
   </div>
   <div className="experience">
@@ -306,7 +320,7 @@ function App() {
 <p><b className="top1">POPULAR SEARCHES</b></p>
 <div className="popular">
 <p>Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags |  Sport Shoes |  Reebok Shoes | Puma<br/>Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever<br/>
- 21  Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | 
+ 21  Eye Makeup | Photo Frames | Punjabi Suits | Bikini | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles |
   Bras | Suit |<br/> Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers | Sarees</p>
 </div>
 
@@ -335,67 +349,67 @@ Telephone: <b className="bluecontact">+91-80-61561999</b></p>
 <hr/>
 
 <p><b className="top2">ONLINE SHOPPING MADE EASY AT MYNTRA</b></p>
-<p className="popular1">If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate 
+<p className="popular1">If you would like to experience the best of online shopping for men, women and kids in India, you are at the right place. Myntra is the ultimate
 destination for fashion and lifestyle, being<br/> host to a wide array of merchandise including clothing, footwear, accessories, jewellery, personal
- care products and more. It is time to redefine your style statement with our treasure-trove<br/> of trendy items. Our online store brings you the 
+ care products and more. It is time to redefine your style statement with our treasure-trove<br/> of trendy items. Our online store brings you the
  latest in designer products straight out of fashion houses. You can shop online at Myntra from the comfort of your home and get your<br/> favourites
   delivered right to your doorstep.</p>
 <p><b className="top2">BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</b></p>
-<p className="popular1">Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. You will 
+<p className="popular1">Be it clothing, footwear or accessories, Myntra offers you the ideal combination of fashion and functionality for men, women and kids. You will
 realise that the sky is the limit when it comes<br/>to the types of outfits that you can purchase for different occasions.</p>
 
-<p className="popular2">1.<b className="top3">Smart men’s clothing</b> - At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and 
-pyjama combinations for men. Wear your<br/>attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans. 
+<p className="popular2">1.<b className="top3">Smart men’s clothing</b> - At Myntra you will find myriad options in smart formal shirts and trousers, cool T-shirts and jeans, or kurta and
+pyjama combinations for men. Wear your<br/>attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and distressed jeans.
 Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably<br/>smart. Team them up with chinos, cuffed jeans or cropped trousers
  for a smart casual look. Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage<br/>in water-resistant jackets.
  Browse through our innerwear section to find supportive garments which would keep you confident in any outfit.</p>
 
-<p className="popular2">2.<b className="top3">Trendy women’s clothing </b>- Online shopping for women at Myntra is a mood-elevating experience. 
-Look hip and stay comfortable with chinos and printed shorts this summer. Look<br/>hot on your date dressed in a little black dress, or 
-opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your<br/>favourites 
+<p className="popular2">2.<b className="top3">Trendy women’s clothing </b>- Online shopping for women at Myntra is a mood-elevating experience.
+Look hip and stay comfortable with chinos and printed shorts this summer. Look<br/>hot on your date dressed in a little black dress, or
+opt for red dresses for a sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose your<br/>favourites
 from among Bardot, off-shoulder, shirt-style, blouson, embroidered and peplum tops, to name a few. Team them up with skinny-fit jeans, skirts
- or palazzos. Kurtis and<br/>jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections 
- are perfect to make an impression at big social events such as<br/>weddings. Our salwar-kameez sets, kurtas and Patiala suits make 
+ or palazzos. Kurtis and<br/>jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees and lehenga-choli selections
+ are perfect to make an impression at big social events such as<br/>weddings. Our salwar-kameez sets, kurtas and Patiala suits make
  comfortable options for regular wear.</p>
 
  <p className="popular2">3.<b className="top3">Fashionable footwear</b>- While clothes maketh the man, the type of footwear you wear reflects your personality.
-  We bring you an exhaustive lineup of options in casual shoes for<br/>men, such as sneakers and loafers. Make a power statement at work dressed in 
+  We bring you an exhaustive lineup of options in casual shoes for<br/>men, such as sneakers and loafers. Make a power statement at work dressed in
   brogues and oxfords. Practice for your marathon with running shoes for men and women. Choose<br/>shoes for individual games such as tennis, football,
-   basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of<br/> 
+   basketball, and the like. Or step into the casual style and comfort offered by sandals, sliders, and flip-flops. Explore our lineup of<br/>
    fashionable footwear for ladies, including pumps,
   heeled boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished and metallic flats.</p>
 
   <p className="popular2">4.<b className="top3">Stylish accessories</b>- Myntra is one of the best online shopping sites for classy accessories
-   that perfectly complement your outfits. You can select smart analogue or digital watches<br/>and match them up with belts and ties. Pick up spacious 
-   bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling<br/>pieces, our online 
+   that perfectly complement your outfits. You can select smart analogue or digital watches<br/>and match them up with belts and ties. Pick up spacious
+   bags, backpacks, and wallets to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling<br/>pieces, our online
    jewellery collection offers you many impressive options.</p>
 
-   <p className="popular2">5.<b className="top3">Fun and frolic</b>- Online shopping for kids at Myntra is a complete joy. Your little princess 
-   is going to love the wide variety of pretty dresses, ballerina shoes, headbands and clips.<br/>Delight your son by picking up sports shoes, 
+   <p className="popular2">5.<b className="top3">Fun and frolic</b>- Online shopping for kids at Myntra is a complete joy. Your little princess
+   is going to love the wide variety of pretty dresses, ballerina shoes, headbands and clips.<br/>Delight your son by picking up sports shoes,
    superhero T-shirts, football jerseys and much more from our online store. Check out our lineup of toys with which you can create<br/>memories to
     cherish.</p>
 
-    <p className="popular2">6.<b className="top3">Beauty begins here</b>- You can also refresh, rejuvenate and reveal beautiful skin with personal 
+    <p className="popular2">6.<b className="top3">Beauty begins here</b>- You can also refresh, rejuvenate and reveal beautiful skin with personal
     care, beauty and grooming products from Myntra. Our soaps, shower gels, skin care<br/>creams, lotions and other ayurvedic products are specially
-     formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair<br/> uber-stylish with 
+     formulated to reduce the effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair<br/> uber-stylish with
      shampoos and hair care products. Choose makeup to enhance your natural beauty.</p>
 
-     <p className="popular1">Myntra is one of the best online shopping sites in India which could help transform your living spaces completely. Add colour and personality 
-     to your bedrooms with bed linen and<br/>curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants 
+     <p className="popular1">Myntra is one of the best online shopping sites in India which could help transform your living spaces completely. Add colour and personality
+     to your bedrooms with bed linen and<br/>curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and artificial plants
      are sure to breathe life into any corner of your home.</p>
 
 <b className="top2">AFFORDABLE FASHION AT YOUR FINGERTIPS</b>
-<p className="popular1"> Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest 
-designer clothing, footwear and accessories in the<br/>market. You can get your hands on the trendiest style every season in western wear. You can also 
-avail the best of ethnic fashion during all Indian festive occasions. You are sure to be<br/>impressed with our seasonal discounts on footwear, 
+<p className="popular1"> Myntra is one of the unique online shopping sites in India where fashion is accessible to all. Check out our new arrivals to view the latest
+designer clothing, footwear and accessories in the<br/>market. You can get your hands on the trendiest style every season in western wear. You can also
+avail the best of ethnic fashion during all Indian festive occasions. You are sure to be<br/>impressed with our seasonal discounts on footwear,
 trousers, shirts, backpacks and more. The end-of-season sale is the ultimate experience when fashion gets unbelievably affordable.</p>
 
 <b className="top2"> MYNTRA INSIDER </b>
-<p className="popular1"> Every online shopping experience is precious. Hence, a cashless reward-based customer loyalty program called Myntra 
-Insider was introduced to enhance your online experience. The<br/>program is applicable to every registered customer and measures rewards in the form 
+<p className="popular1"> Every online shopping experience is precious. Hence, a cashless reward-based customer loyalty program called Myntra
+Insider was introduced to enhance your online experience. The<br/>program is applicable to every registered customer and measures rewards in the form
 of Insider Points.</p>
 
-<p className="popular1">There are four levels to achieve in the program, as the Insider Points accumulate. They are - Insider, Select, Elite or Icon. Apart from 
+<p className="popular1">There are four levels to achieve in the program, as the Insider Points accumulate. They are - Insider, Select, Elite or Icon. Apart from
 offering discounts on Myntra and partner platform<br/>coupons, each tier comes with its own special perks.</p>
 
 <b className="top2">Insider</b>
@@ -411,34 +425,34 @@ offering discounts on Myntra and partner platform<br/>coupons, each tier comes w
 
 
 <b className="top2">Myntra Studio - The Personalised Fashion Feed You Wouldn’t Want To Miss Out On</b>
-<p className="popular1">The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming 
-surge of online content. It was for this very<br/>reason that personalisation of search feeds was proposed as a solution to combat the overload of 
+<p className="popular1">The world wide web is evolving at a relentless pace, and with an accelerated growth each passing year, there is bound to be an overwhelming
+surge of online content. It was for this very<br/>reason that personalisation of search feeds was proposed as a solution to combat the overload of
 irrelevant information.</p>
 
-<p className="popular1">Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter content, 
+<p className="popular1">Several social media platforms such as Facebook and Instagram along with various online shopping websites have chosen to help filter content,
 increasing user engagement, retention and customer loyalty.</p>
 
 <p className="popular1">Myntra is one such online shopping website that joins the list of platforms that help curate a personalised fashion feed.
  Named theMyntra Studio, this personalised search feed brings you<br/>the latest men and women’s fashion trends, celebrity styles, branded content and
   daily updates from your favourite fashion labels.</p>
 
-  <p className="popular1">If you are wondering how impactful Myntra Studio can be, we are listing out five perks of having a rich, meaningful, 
+  <p className="popular1">If you are wondering how impactful Myntra Studio can be, we are listing out five perks of having a rich, meaningful,
   and personalised fashion feed in your life.</p>
 
 
 <p className="popular2">1.<b className="top4">Keep Up With What Your Favourite Fashion Icons Are Upto</b></p>
 <p className="popular2">The #OOTD, AKA outfit of the day hashtag trend has been a rage among fashion bloggers and stylists.
- The whole concept of building an outfit from scratch and showcasing it to a<br/>huge community of enthusiasts using the hashtag has helped 
+ The whole concept of building an outfit from scratch and showcasing it to a<br/>huge community of enthusiasts using the hashtag has helped
  individuals with understanding trends and making suitable for daily wear.</p>
 
- <p className="popular2">Imagine if you could keep up with every piece of clothing and accessory worn by the fashion icons you look upto. 
+ <p className="popular2">Imagine if you could keep up with every piece of clothing and accessory worn by the fashion icons you look upto.
  From Sonam Kapoor to Hailey Baldwin Bieber, Myntra Studio has a<br/>‘Stories’ feature to help track celebrity fashion trends, exploring details
   such as their outfit of the day. This way, you would not ever miss out on the latest celebrity fashion trends,<br/>from all around the world.</p>
-  
-  
+
+
 <p className="popular2">2.<b className="top4">Quick Fashion Tip And Tricks</b></p>
 <p className="popular2">Whether it is draping a saree into a dhoti style, wearing the right lingerie under certain dresses or discovering
- multiple uses out of heavy ethnic wear, Myntra Studio will help you<br/>acquire some unique and useful fashion hacks. Each hack is designed with 
+ multiple uses out of heavy ethnic wear, Myntra Studio will help you<br/>acquire some unique and useful fashion hacks. Each hack is designed with
  the intention to help you get the best wear out of everything in your wardrobe.</p>
 
  <p className="popular2">3.<b className="top4">Updates on What Is Trending and New Product Launches</b></p>
@@ -449,8 +463,8 @@ increasing user engagement, retention and customer loyalty.</p>
     jewellery, along with their new seasonal collections.</p>
 
 <p className="popular2">4.<b className="top4">Explicit Step-By-Step Beauty Routines From Experts</b></p>
-<p className="popular2">Just like fashion, the beauty community keeps on growing, and with brands such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif, 
-are constantly coming up with<br/>mind-blowing products. Whether it is <br/>creating a no-makeup look, different winged eyeliners, do-it-yourself facial 
+<p className="popular2">Just like fashion, the beauty community keeps on growing, and with brands such as Huda Beauty, MAC and the latest Kay Beauty by Katrina Kaif,
+are constantly coming up with<br/>mind-blowing products. Whether it is <br/>creating a no-makeup look, different winged eyeliners, do-it-yourself facial
 masks and other personal care beauty routines, Myntra Studio is here for you.</p>
 
 <p className="popular2">5.<b className="top4">Celebrity Confessions And A Look Into Their Lives</b></p>
@@ -459,7 +473,7 @@ masks and other personal care beauty routines, Myntra Studio is here for you.</p
 
  <p className="popular2">If you are very particular when it comes to the content you wish to view and engage with on social media, the ability to intricately filter
  content helps achieve that. Applying the<br/>same formula for hardcore fashion lovers and shoppers, Myntra Studio brings you a daily fashion fix
-  incorporating everything that you love, all at one place. Sign up on Myntra today<br/>and start organising your fashion feed, just the way you want 
+  incorporating everything that you love, all at one place. Sign up on Myntra today<br/>and start organising your fashion feed, just the way you want
   to.</p>
 
 
@@ -473,20 +487,20 @@ masks and other personal care beauty routines, Myntra Studio is here for you.</p
 
     <p><b className="top2">HISTORY OF MYNTRA</b></p>
     <p className="popular3">Becoming India’s no. 1 fashion destination is not an easy feat. Sincere efforts, digital enhancements and a team of dedicated personnel
- with an equally loyal customer base have made<br/>Myntra the online platform that it is today. The original B2B venture for personalized gifts 
- was conceived in 2007 but transitioned into a full-fledged ecommerce giant within a span of just<br/>a few years. By 2012, Myntra had introduced 
+ with an equally loyal customer base have made<br/>Myntra the online platform that it is today. The original B2B venture for personalized gifts
+ was conceived in 2007 but transitioned into a full-fledged ecommerce giant within a span of just<br/>a few years. By 2012, Myntra had introduced
  350 Indian and international brands to its platform, and this has only grown in number each passing year. Today Myntra sits on top of the<br/>online
   fashion game with an astounding social media following, a loyalty program dedicated to its customers, and tempting, hard-to-say-no-to deals.</p>
 
 
 
-  <p className="popular3">The Myntra shopping app came into existence in the year 2015 to further encourage customers’ shopping sprees. 
+  <p className="popular3">The Myntra shopping app came into existence in the year 2015 to further encourage customers’ shopping sprees.
   Download the app on your Android or IOS device this very minute to<br/>experience fashion like never before</p>
 
 
 <p><b className="top2">SHOP ONLINE AT MYNTRA WITH COMPLETE CONVENIENCE</b></p>
 <p className="popular3">Another reason why Myntra is the best of all online stores is the complete convenience that it offers. You can view
- your favourite brands with price options for different products in one<br/>place. A user-friendly interface will guide you through your selection 
+ your favourite brands with price options for different products in one<br/>place. A user-friendly interface will guide you through your selection
  process. Comprehensive size charts, product information and high-resolution images help you make the best buying<br/>decisions. You also have the
   freedom to choose your payment options, be it card or cash-on-delivery. The 30-day returns policy gives you more power as a buyer. Additionally,
    the try-and-<br/>buy option for select products takes customer-friendliness to the next level.</p>

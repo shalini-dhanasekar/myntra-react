@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 .Navtop {
   font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   background-color: white;
@@ -7,6 +9,7 @@
 }
 .mainlogo
 {
+  padding: 0px;
   padding-left: 40px;
 }
 .search
@@ -17,12 +20,23 @@
   color:#282c3f;
   font-size: 14px;
   font-weight: bold;
-  
-}
 
+}
+ion-icon {
+  font-size: 24px;
+  color: #282c3f;
+}
+.navbar-nav
+{
+  box-shadow: grey;
+}
+.navbar-icon-text{
+  font-size: 11px;
+  font-weight: bold;
+}
 .form-inline .form-control {
   display: inline-block;
-  width: 650px;
+  width: 40vw;
   height: 38px;
   vertical-align: middle;
   border: 1px solid #f5f5f6;
@@ -53,29 +67,10 @@
 }
 .material-icons.md-dark {
   color: #282c3f;
-  
+
 }
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  -webkit-font-feature-settings: 'liga';
-  /*margin-left: -105px;*/
-  
-}
-/*.svg-inline--fa {
+
+/* .svg-inline--fa {
   display: inline-block;
   font-size: inherit;
   height: 1em;
@@ -83,12 +78,12 @@
   overflow: visible;
   color: #282c3f;
   top: -40px;
-  
+
 }
 .svg-inline--fa.fa-w-12 {
   width: 0.75em;
   margin-left: -70px;
-}*/
+} */
 p.texttitle {
   text-transform: uppercase;
   color: #3e4152;
@@ -99,23 +94,23 @@ p.texttitle {
   font-weight: 500;
 }
 
-/*@media (min-width: 576px)
+@media (min-width: 576px)
 .card-deck {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
    /* margin-right: -15px;*/
     /* margin-left: -15px; */
-
+}
 .card-deck {
-margin: 50px;
+  margin: 50px;
 }
 .card-img-top {
-   width: 100%; 
+   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
 }
 h2.textplay {
- 
+
   color:black;
   font-weight: 500;
   font-family: 'Times New Roman', Times, serif;
@@ -145,7 +140,7 @@ h2.textplay {
   font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   padding-top: 25px;
 }
-.rowforfooter 
+.rowforfooter
 {
   margin-left: 80px;
 }
@@ -170,15 +165,15 @@ h2.textplay {
   font-size: 10px;
   text-align: center;
 }
-.online 
+.online
 {
   font-size: 12px;
 }
-.experience 
+.experience
 {
   margin-left: 50px;
 }
-.ordericons 
+.ordericons
 {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -186,13 +181,22 @@ h2.textplay {
 .order
 {
   font-size:15px;
-  
-}
-.icons img
-{
-  padding-right:5px;
-  height:20px;
 
+}
+.icons{
+  height: 10px;
+}
+.icons img{
+  height: 20px;
+  padding-right: 10px;
+}
+.new-badge{
+  background: red;
+  color: white;
+  padding: 1px 8px;
+  border-radius: 40px;
+  margin-left: 5px;
+  font-size: 10px;
 }
 .list-group-item {
 position: relative;
@@ -208,10 +212,10 @@ display: block;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
-   flex-grow:0; 
+   flex-grow:0;
   max-width: 100%;
 }
-.popular 
+.popular
 {
   color: #94969f;;
     font-size: 15px;
@@ -221,19 +225,19 @@ display: block;
 {
   color: #94969f;
   font-size: 13px;
-    
+
 }
 .popular3
 {
   color: #94969f;
   font-size: 14px;
-    
+
 }
 .popular2
 {
   color: #94969f;
   font-size: 13px;
-   margin-left: 20px; 
+   margin-left: 20px;
 }
 .top3
 {
@@ -254,20 +258,20 @@ display: block;
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.contact 
+.contact
 {
   color: #94969f;;
   font-size: 15px;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
-.bluecontact 
+.bluecontact
 {
   color: #526cd0;
 }
 .copyrights
 {
   color: #94969f;;
-  font-size: 16px; 
+  font-size: 16px;
   margin-left: 920px;
   margin-top: -35px;
   font-weight: 100;
@@ -275,18 +279,11 @@ display: block;
 .copyrights1
 {
   color: #94969f;
-  font-size: 15px; 
+  font-size: 15px;
   margin-left: 900px;
   margin-top: -45px;
 }
-.New 
+.topcarousel img
 {
-  background-color: red;
-  color: white;
-  border: 1px solid red;
-  border-radius: 4px;
-}
-a:not([href]):not([tabindex]) {
-  color: white;
-  text-decoration: none;
+  margin-top: 120px;
 }
