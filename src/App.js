@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="main">
 
-    <div className="Navtop fixed-top shadow p-3 mb-5  bg-white rounded">
-      <Navbar>
+    <div className="Navtop fixed-top">
+      <Navbar className="shadow p-3 mb-5">
     <Navbar.Brand href="#home" className="mainlogo">
     <img
         src={mainlogo}
