@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/myntra-react/static/css/main.6a264f8a.chunk.css",
+    "main.js": "/myntra-react/static/js/main.5a35e0c3.chunk.js",
+    "main.js.map": "/myntra-react/static/js/main.5a35e0c3.chunk.js.map",
+    "runtime-main.js": "/myntra-react/static/js/runtime-main.17dd0814.js",
+    "runtime-main.js.map": "/myntra-react/static/js/runtime-main.17dd0814.js.map",
+    "static/js/2.a206118e.chunk.js": "/myntra-react/static/js/2.a206118e.chunk.js",
+    "static/js/2.a206118e.chunk.js.map": "/myntra-react/static/js/2.a206118e.chunk.js.map",
+    "index.html": "/myntra-react/index.html",
+    "precache-manifest.4d033f252f72dc62c1b93c5fa6fc70fc.js": "/myntra-react/precache-manifest.4d033f252f72dc62c1b93c5fa6fc70fc.js",
+    "service-worker.js": "/myntra-react/service-worker.js",
+    "static/css/main.6a264f8a.chunk.css.map": "/myntra-react/static/css/main.6a264f8a.chunk.css.map",
+    "static/js/2.a206118e.chunk.js.LICENSE.txt": "/myntra-react/static/js/2.a206118e.chunk.js.LICENSE.txt",
+    "static/media/myntralogo.png": "/myntra-react/static/media/myntralogo.f0d1b18e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17dd0814.js",
+    "static/js/2.a206118e.chunk.js",
+    "static/css/main.6a264f8a.chunk.css",
+    "static/js/main.5a35e0c3.chunk.js"
+  ]
+}
